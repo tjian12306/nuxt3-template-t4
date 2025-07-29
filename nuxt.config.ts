@@ -1,6 +1,9 @@
-import { defineNuxtConfig } from "nuxt3"
+import { defineNuxtConfig } from "nuxt/config"
 
 export default defineNuxtConfig({
+  // 添加兼容性日期
+  compatibilityDate: "2025-07-29",
+
   devtools: { enabled: true },
 
   modules: ["@nuxt/ui", "@nuxt/content", "@nuxt/image", "@nuxtjs/i18n", "@pinia/nuxt", "nuxt-icon"],

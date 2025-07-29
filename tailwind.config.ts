@@ -1,6 +1,6 @@
-import defaultConfig from "shadcn/ui/tailwind.config"
+import type { Config } from "tailwindcss"
 
-export default defaultConfig({
+export default {
   darkMode: ["class"],
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -9,6 +9,7 @@ export default defaultConfig({
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
+    "./content/**/*.md",
     "*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -22,6 +23,17 @@ export default defaultConfig({
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          50: "rgb(var(--color-primary-50))",
+          100: "rgb(var(--color-primary-100))",
+          200: "rgb(var(--color-primary-200))",
+          300: "rgb(var(--color-primary-300))",
+          400: "rgb(var(--color-primary-400))",
+          500: "rgb(var(--color-primary-500))",
+          600: "rgb(var(--color-primary-600))",
+          700: "rgb(var(--color-primary-700))",
+          800: "rgb(var(--color-primary-800))",
+          900: "rgb(var(--color-primary-900))",
+          950: "rgb(var(--color-primary-950))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -70,5 +82,5 @@ export default defaultConfig({
       },
     },
   },
-  plugins: [...defaultConfig.plugins, require("tailwindcss-animate")],
-})
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config
