@@ -2,6 +2,7 @@
   "name": "nuxt3-modern-template",
   "version": "1.0.0",
   "description": "Modern, modular Nuxt 3 website template",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "nuxt dev",
