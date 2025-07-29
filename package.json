@@ -1,0 +1,35 @@
+{
+  "name": "nuxt3-modern-template",
+  "version": "1.0.0",
+  "description": "Modern, modular Nuxt 3 website template",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "type-check": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.8.5",
+    "@nuxt/image": "^1.1.0",
+    "@nuxt/ui": "^2.11.1",
+    "@nuxtjs/i18n": "^8.0.0",
+    "@pinia/nuxt": "^0.5.1",
+    "nuxt-icon": "^0.6.6",
+    "pinia": "^2.1.7"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxt/eslint-config": "^0.2.0",
+    "@nuxtjs/tailwindcss": "^6.8.4",
+    "@types/node": "^20.10.0",
+    "eslint": "^8.57.0",
+    "nuxt": "^3.8.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.0"
+  }
+}

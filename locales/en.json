@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "docs": "Documentation",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "theme": {
+    "switch": "Switch theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "Latest articles, tutorials, and insights about web development",
+    "relatedPosts": "Related Posts",
+    "readMore": "Read More",
+    "categories": "Categories",
+    "tags": "Tags",
+    "publishedOn": "Published on",
+    "by": "by"
+  },
+  "landing": {
+    "hero": {
+      "title": "Build Amazing Websites",
+      "description": "Create modern, fast, and beautiful websites with our Nuxt 3 template",
+      "cta": {
+        "primary": "Get Started",
+        "secondary": "Learn More"
+      }
+    },
+    "features": {
+      "subtitle": "Features",
+      "title": "Everything you need",
+      "description": "Our template includes everything you need to build modern websites"
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about our template"
+    },
+    "testimonials": {
+      "title": "What our users say",
+      "description": "Don't just take our word for it"
+    },
+    "pricing": {
+      "title": "Simple, transparent pricing",
+      "description": "Choose the plan that's right for you"
+    }
+  },
+  "footer": {
+    "company": "Company"
+  }
+}
