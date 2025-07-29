@@ -17,6 +17,13 @@ export default defineNuxtConfig({
     icons: ["heroicons", "lucide"],
   },
 
+  // Icon configuration
+  icon: {
+    serverBundle: {
+      collections: ["heroicons", "lucide"],
+    },
+  },
+
   // Content configuration
   content: {
     highlight: {
