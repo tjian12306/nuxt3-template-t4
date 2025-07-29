@@ -1,5 +1,7 @@
 {
-  "name": "nuxt-app",
+  "name": "nuxt3-modern-template",
+  "version": "1.0.0",
+  "description": "Modern, modular Nuxt 3 website template",
   "private": true,
   "type": "module",
   "scripts": {
@@ -7,7 +9,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@nuxt/content": "3.6.3",
@@ -22,12 +26,15 @@
     "eslint": "^9.0.0",
     "nuxt": "^4.0.1",
     "pinia": "^3.0.3",
-    "tailwindcss": "^4.1.11",
+    "tailwindcss": "^4.1.9",
     "typescript": "^5.6.3",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@iconify-json/heroicons": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

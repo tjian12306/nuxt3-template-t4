@@ -1,4 +1,3 @@
-
 import { defuFn } from 'defu'
 
 const inlineConfig = {

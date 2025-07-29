@@ -1,4 +1,3 @@
-
 import type { AppConfigInput, CustomAppConfig } from 'nuxt/schema'
 import type { Defu } from 'defu'
 import cfg0 from "../../app/app.config"

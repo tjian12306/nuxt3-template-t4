@@ -1,7 +1,7 @@
 import { ref, computed, readonly } from "vue"
 
 export const useTheme = () => {
-  const theme = ref("light")
+  const theme = ref("system")
   const colorScheme = ref("primary")
 
   const themes = computed(() => [
@@ -135,7 +135,11 @@ export const useTheme = () => {
     // Listen for system theme changes
     if (savedTheme === "system") {
       const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
-      mediaQuery.addEventListener("change", () => applyTheme("system"))
+      const handleChange = () => applyTheme("system")
+      mediaQuery.addEventListener("change", handleChange)
+
+      // Cleanup function
+      return () => mediaQuery.removeEventListener("change", handleChange)
     }
   }
 

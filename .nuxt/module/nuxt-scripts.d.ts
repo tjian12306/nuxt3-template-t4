@@ -1,4 +1,3 @@
-
 declare module '#app' {
   interface NuxtApp {
     $scripts: Record<string, (import('#nuxt-scripts/types').UseScriptContext<any>)>

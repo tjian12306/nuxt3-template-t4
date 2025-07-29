@@ -1,4 +1,3 @@
-
 /// <reference path="nitro-middleware.d.ts" />
 /// <reference path="./runtime-config.d.ts" />
 

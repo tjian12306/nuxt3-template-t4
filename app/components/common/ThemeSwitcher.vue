@@ -11,18 +11,23 @@
 <script setup lang="ts">
 import { useTheme } from '~/composables/useTheme'
 import { useI18n } from '#imports'
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
 
-const { theme, setTheme, themes } = useTheme()
+const { theme, setTheme, themes, initialize } = useTheme()
 const { t } = useI18n()
 
-const items = computed(() => [
-  themes.value.map(themeOption => ({
+// 初始化主题
+onMounted(() => {
+  initialize()
+})
+
+const items = computed(() => {
+  return themes.value.map(themeOption => ({
     label: t(`theme.${themeOption.key}`),
     icon: themeOption.icon,
     click: () => setTheme(themeOption.key)
   }))
-])
+})
 
 const currentTheme = computed(() => {
   return themes.value.find(t => t.key === theme.value) || themes.value[0]

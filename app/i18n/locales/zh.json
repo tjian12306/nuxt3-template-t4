@@ -1,11 +1,11 @@
 {
   "nav": {
     "home": "首页",
-    "dashboard": "仪表板",
-    "docs": "文档",
-    "blog": "博客",
     "about": "关于",
-    "contact": "联系"
+    "services": "服务",
+    "contact": "联系",
+    "docs": "文档",
+    "blog": "博客"
   },
   "theme": {
     "switch": "切换主题",
@@ -13,44 +13,10 @@
     "dark": "深色",
     "system": "系统"
   },
-  "blog": {
-    "title": "博客",
-    "description": "关于 Web 开发的最新文章、教程和见解",
-    "relatedPosts": "相关文章",
-    "readMore": "阅读更多",
-    "categories": "分类",
-    "tags": "标签",
-    "publishedOn": "发布于",
-    "by": "作者"
-  },
-  "landing": {
-    "hero": {
-      "title": "构建精彩网站",
-      "description": "使用我们的 Nuxt 3 模板创建现代、快速、美观的网站",
-      "cta": {
-        "primary": "开始使用",
-        "secondary": "了解更多"
-      }
-    },
-    "features": {
-      "subtitle": "特性",
-      "title": "您需要的一切",
-      "description": "我们的模板包含构建现代网站所需的一切"
-    },
-    "faqs": {
-      "title": "常见问题",
-      "description": "找到关于我们模板的常见问题答案"
-    },
-    "testimonials": {
-      "title": "用户评价",
-      "description": "不要只听我们的话"
-    },
-    "pricing": {
-      "title": "简单透明的定价",
-      "description": "选择适合您的计划"
-    }
+  "language": {
+    "switch": "切换语言"
   },
   "footer": {
-    "company": "公司"
+    "copyright": "© 2024 您的公司. 保留所有权利."
   }
 }
