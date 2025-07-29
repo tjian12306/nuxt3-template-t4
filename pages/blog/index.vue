@@ -100,8 +100,7 @@
 
 <script setup>
 import { definePageMeta, useI18n, useLocalePath, ref, computed } from '#imports'
-import { queryContent } from '~~/composables/queryContent'
-import { UPagination, UButton } from '~~/components'
+import { queryContent } from '@nuxt/content'
 
 definePageMeta({
   layout: 'docs'
@@ -110,7 +109,7 @@ definePageMeta({
 const { locale } = useI18n()
 const localePath = useLocalePath()
 
-// Fetch blog posts
+// Fetch blog posts using @nuxt/content
 const posts = await queryContent('blog')
   .where({ _locale: locale.value })
   .sort({ publishedAt: -1 })

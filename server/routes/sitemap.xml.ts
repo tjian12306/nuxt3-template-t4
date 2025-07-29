@@ -1,9 +1,7 @@
 import { defineEventHandler, setHeader } from "h3"
-import { useRuntimeConfig } from "#app"
 
 export default defineEventHandler(async (event) => {
-  const config = useRuntimeConfig()
-  const baseURL = config.public.siteUrl
+  const baseURL = process.env.NUXT_PUBLIC_SITE_URL || "http://localhost:3000"
 
   const routes = ["/", "/dashboard", "/docs"]
 

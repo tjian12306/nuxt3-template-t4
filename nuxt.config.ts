@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from "nuxt/config"
+import { defineNuxtConfig } from "nuxt"
 
 export default defineNuxtConfig({
   // 添加兼容性日期
@@ -75,9 +75,9 @@ export default defineNuxtConfig({
     },
   },
 
-  // TypeScript configuration - 禁用类型检查以避免启动问题
+  // TypeScript configuration
   typescript: {
-    typeCheck: false, // 改为 false，避免启动时的类型检查问题
+    typeCheck: false,
   },
 
   // Nitro configuration for SEO

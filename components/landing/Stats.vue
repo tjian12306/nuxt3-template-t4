@@ -23,8 +23,6 @@
 </template>
 
 <script setup>
-import Icon from '~/components/Icon.vue'
-
 const props = defineProps({
   data: Array
 })

@@ -126,7 +126,7 @@
 
 <script setup>
 import { definePageMeta, useI18n, useLocalePath, useRoute, computed } from '#imports'
-import { queryContent } from '~~/composables/queryContent'
+import { queryContent } from '@nuxt/content'
 
 definePageMeta({
   layout: 'docs'
@@ -144,7 +144,7 @@ const currentUrl = computed(() => {
   return ''
 })
 
-// Fetch related posts
+// Fetch related posts using @nuxt/content
 const { data: relatedPosts } = await queryContent('blog')
   .where({ 
     _locale: locale.value,
